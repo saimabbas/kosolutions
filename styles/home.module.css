@@ -1,0 +1,365 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 12.5rem 10% 5rem 10%;
+}
+.heroLeft {
+  width: 50%;
+}
+.heroLeft h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--lblue);
+}
+.heroLeft h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--dblue);
+  margin: 1rem 0 10rem 0;
+}
+.heroLeft button {
+  padding: 1.5rem 4rem;
+  font-size: 1.75rem;
+  color: var(--light);
+  background-color: var(--lblue);
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroLeft button span {
+  transform: translate(0, 0);
+}
+.heroLeft button svg {
+  transform: translate(-100%, 0);
+  opacity: 0;
+}
+.heroLeft button:hover > span {
+  transform: translate(-10%, 0);
+}
+.heroLeft button:hover > svg {
+  transform: translate(25%, 0);
+  opacity: 1;
+}
+.heroRight {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroRight img {
+object-fit: contain;
+width: 80%;
+}
+.heroRight span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-5rem, -5rem);
+}
+.heroRight span svg {
+  font-size: 2.5rem;
+  color: var(--lblue);
+  margin: 0 0.75rem;
+}
+.fields {
+  margin: 10rem 0 0 0;
+  padding: 5rem 10% 20rem 10%;
+  background-color: var(--lblue);
+  position: relative;
+  z-index: 5;
+}
+.fields h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--light);
+}
+.fields h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--light);
+  margin: 1.5rem 0 5rem 0;
+  opacity: 0.75;
+  width: 60%;
+}
+.fieldsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.fieldsBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8.5rem 5rem;
+  border: 1px solid var(--light);
+}
+.fieldsBox img {
+  width: 60%;
+  height: 15rem;
+  object-fit: contain;
+}
+.fieldsBox p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--light);
+  margin: 2.5rem 0 0 0;
+  text-align: center;
+}
+.centerContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 6;
+  transform: translate(0, -10rem);
+}
+.centerBox {
+  width: 65%;
+  background-color: var(--light);
+}
+.centerBox h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--lblue);
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  align-items: center;
+}
+.centerBoxContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 0 5rem 0;
+}
+.cbcLeft {
+  width: 50%;
+}
+.mainPortion {
+  width: 100%;
+  margin: 5rem 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.mpLeft {
+  width: 60%;
+}
+.mpLeft img {
+  width: 100%;
+}
+.mpRight {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 0 5rem;
+  width: 40%;
+}
+.mpRight span {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mpRight img {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.mpRight svg {
+  font-size: 2rem;
+  color: var(--lblue);
+  margin: 1rem 0;
+}
+.mpRight h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--dblue);
+}
+.mpRight h2 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: var(--dblue);
+}
+.mpOver {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--dblue);
+  width: 60%;
+  padding: 2.5rem 5rem;
+}
+.mpOver h2 {
+  font-size: 1.75rem;
+  color: var(--light);
+  font-weight: 400;
+}
+.mpOver div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 1rem 0 0 0;
+}
+.mpOver div h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--light);
+  width: 30%;
+}
+.mpOver div p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--light);
+  width: 30%;
+}
+@media screen and (max-width: 1000px) {
+  .hero {
+    padding: 5rem 5% 5rem 5%;
+  }
+  .fields {
+    padding: 5rem 5% 15rem 5%;
+  }
+  .fieldsBox {
+    width: 30%;
+    padding: 2.5rem 2.5rem;
+  }
+  .centerBox h1 {
+    height: 6rem;
+  }
+  .centerContainer {
+    transform: translate(0, -6rem);
+  }
+  .centerBox {
+    width: 90%;
+  }
+  .mpOver {
+    position: relative;
+    width: 100%;
+    padding: 2.5rem 5rem;
+  }
+  .mpLeft {
+    display: none;
+  }
+  .mainPortion {
+    flex-direction: column;
+    margin: 0;
+  }
+  .mpRight {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+  }
+  .mpRight span {
+    align-items: center;
+    margin: 0 0 2.5rem 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero {
+    flex-direction: column;
+  }
+  .heroLeft {
+    width: 100%;
+  }
+  .heroRight {
+    width: 100%;
+    margin: 5rem 0 0 0;
+    position: relative;
+  }
+  .heroRight img {
+    width: 80%;
+  }
+  .heroLeft h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .heroLeft h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0 3.5rem 0;
+    text-align: center;
+  }
+  .heroLeft button {
+    padding: 1.25rem 3rem;
+    font-size: 1.5rem;
+    margin: 0 auto;
+  }
+  .heroRight span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-50%, 5rem);
+  }
+  .fields {
+    margin: 5rem 0 0 0;
+    padding: 2.5rem 5% 10rem 5%;
+  }
+  .fields h2 {
+    width: 100%;
+    text-align: center;
+    margin: 1.5rem 0 2.5rem 0;
+  }
+  .fieldsBox {
+    width: 65%;
+    padding: 2.5rem 5rem;
+    margin: 0 0 2.5rem 0;
+  }
+  .fieldsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .fieldsBox img {
+    width: 60%;
+    height: 10rem;
+    object-fit: contain;
+  }
+  .fields h1 {
+    text-align: center;
+  }
+  .centerContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0, -5rem);
+  }
+  .centerBox {
+    width: 90%;
+    background-color: var(--light);
+  }
+  .centerBox h1 {
+    font-size: 2rem;
+    height: 5rem;
+  }
+  .centerBoxContent {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.5rem 0 0 0;
+  }
+  .cbcLeft {
+    width: 100%;
+  }
+  .mpOver {
+    padding:  2.5rem;
+    flex-direction: column;
+  }
+  .mpOver div {
+    flex-direction: column;
+  }
+  .mpOver div h1 {
+    width: 100%;
+  }
+  .mpOver div p {
+    width: 100%;
+    margin: 2.5rem 0 0 0;
+  }
+}

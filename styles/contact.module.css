@@ -1,0 +1,96 @@
+.contact {
+  margin: 5rem 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.contactBox {
+  width: 45%;
+  background-color: var(--lblue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 5rem 10rem 5rem;
+}
+.contactBox h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 5rem 0;
+}
+.contactBox div {
+  margin: 0 0 2.5rem 0;
+  width: 100%;
+}
+.contactBox div label {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 0.75rem 0;
+  display: flex;
+}
+.contactBox div input[type="text"] {
+  width: 100%;
+  border: 0;
+  background-color: #fff;
+  padding: 1.25rem;
+  font-size: 1.65rem;
+  color: var(--dblue);
+}
+.contactBox div textarea {
+  width: 100%;
+  border: 0;
+  background-color: #fff;
+  padding: 1.25rem;
+  font-size: 1.65rem;
+  color: var(--dblue);
+  height: 20rem;
+  min-height: 15rem;
+  max-width: 100%;
+}
+.contactBox span {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 5rem 0;
+}
+.contactBox span input {
+  zoom: 1.25;
+  margin: 0 0.75rem 0 0;
+}
+.contactBox span label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+.contactBox button {
+  margin: 5rem 0 0 auto;
+  padding: 1rem 4rem;
+  font-size: 1.65rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #fff;
+  color: var(--lblue);
+  border: 0;
+}
+@media screen and (max-width: 1000px) {
+  .contactBox {
+    width: 90%;
+    padding: 2.5rem 2.5rem 5rem 2.5rem;
+  }
+  .contact {
+    margin: 2.5rem 0;
+  }
+  .contactBox span {
+    margin: 2.5rem 0;
+  }
+  .contactBox button {
+    margin: 2.5rem 0 0 auto;
+  }
+
+  .contactBox h1 {
+    font-size: 3rem;
+  }
+}

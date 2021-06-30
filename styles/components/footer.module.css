@@ -1,0 +1,136 @@
+.footer {
+  width: 100%;
+  background-color: var(--dblue);
+  padding: 2.5rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footerLeft {
+  width: 30%;
+}
+.footerRight {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.footerRight div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footerLeft img {
+  height: 5rem;
+  transform: translate(0, 0.4rem);
+  margin: 0 0 1.5rem 0;
+}
+.footerLeft p {
+  font-size: 1.5rem;
+  color: var(--light);
+  opacity: 0.75;
+  margin: 0.5rem 0 0 0;
+}
+.footerCenter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2rem 0rem;
+  width: 40%;
+}
+.footerCenter a {
+  font-size: 1.65rem;
+  color: var(--light);
+  opacity: 0.75;
+}
+.footerCenter a:hover {
+  opacity: 1;
+}
+.footerRight span {
+  opacity: 0.75;
+  display: flex;
+  align-items: center;
+  margin: 0 0 1.5rem 0;
+  cursor: pointer;
+}
+.footerRight span a {
+  font-size: 1.5rem;
+  color: var(--light);
+}
+.footerRight span svg {
+  font-size: 1.5rem;
+  color: var(--light);
+  margin: 0 0.5rem 0 0;
+}
+
+.footerRight span:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  .footer {
+    padding: 2.5rem;
+  }
+  .footerLeft img {
+    height: 3.5rem;
+  }
+  .footerLeft
+  {
+    width: 40%;
+  }
+  .footerCenter
+
+  {
+    width: 60%;
+    grid-gap: 2.5rem;
+  }
+  .footerRight 
+  {
+    margin: 5rem 0 0 0;
+    width: 100%;
+    align-items: center;
+  }
+  .footerRight div 
+  {
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footerRight {
+    width: 50%;
+  }
+  .footerRight div {
+    justify-content: flex-start;
+  }
+  .footerLeft p {
+    text-align: center;
+  }
+  .footerLeft {
+    width: 100%;
+    margin: 0 0 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .footerCenter {
+    width: 50%;
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+  }
+  .footerCenter a {
+    font-size: 1.35rem;
+    text-align: start;
+  }
+  .footerRight {
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}

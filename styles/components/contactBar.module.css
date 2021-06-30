@@ -1,0 +1,42 @@
+.contactBar {
+  width: 100%;
+  padding: 2.5rem 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2.5rem 0 0 0;
+  background-color: var(--dblue);
+  border-bottom: 1px solid lightgray;
+}
+.contactBar input {
+  width: 80%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: 0;
+  background-color: var(--light);
+  border-bottom: 1px solid var(--dblue);
+}
+.contactBar button {
+  width: 15%;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  background-color: var(--lblue);
+  border: 0;
+  border-radius: 0;
+  color: var(--light);
+}
+@media screen and (max-width: 500px) {
+  .contactBar {
+    padding: 2.5rem 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .contactBar input {
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+  }
+  .contactBar button {
+    width: 35%;
+  }
+}

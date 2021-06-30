@@ -1,0 +1,27 @@
+.privacyPolicyBox {
+  padding: 5rem 10%;
+}
+.privacyPolicyBox h1 {
+  color: var(--dblue);
+  font-size: 3.5rem;
+  margin: 0 0 5rem 0;
+  font-weight: 800;
+}
+.privacyPolicyBox p {
+  font-size: 1.65rem;
+  font-weight: 500;
+  color: var(--dblue);
+  width: 80%;
+  line-height: 2.25rem;
+}
+@media screen and (max-width: 1000px) {
+  .privacyPolicyBox {
+    padding: 2.5rem 5%;
+  }
+  .privacyPolicyBox p {
+    width: 100%;
+  }
+  .privacyPolicyBox h1 {
+    margin: 0 0 2.5rem 0;
+  }
+}

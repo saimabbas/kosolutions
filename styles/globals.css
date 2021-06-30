@@ -1,0 +1,115 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  font-size: 10px;
+  --lblue: #1b3e92;
+  --dblue: #051c2c;
+  --light: #f2f3f6;
+  --dark: #707070;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+  font-family: "Karla", apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.cbcTextBox {
+  border-left: 0.5rem solid var(--lblue);
+  border-radius: 0.5rem;
+  padding: 0 0 0 5rem;
+  margin: 2.5rem 0 0 0;
+  cursor: pointer;
+}
+.cbcTextBox h2 {
+  font-size: 2rem;
+  color: var(--lblue);
+  font-weight: 800;
+}
+.cbcTextBox:hover > h2 {
+  color: var(--lblue);
+}
+.cbcTextBox p {
+  font-size: 1.5rem;
+  color: var(--lblue);
+  font-weight: 400;
+  margin: 0.5rem 0 2.5rem 0;
+}
+.cbcTextBox a {
+  font-size: 1.5rem;
+  color: var(--lblue);
+  font-weight: 500;
+  display: flex;
+  align-items: flex-end;
+}
+.cbcTextBox a svg {
+  margin: 0 0 0 0.5rem;
+}
+.cbcTextBox a:hover > svg {
+  transform: translate(50%, 0);
+}
+.empty.cbcTextBox {
+  border-left: 0.5rem solid transparent;
+}
+.empty.cbcTextBox p,
+.empty.cbcTextBox a {
+  display: none;
+}
+.empty.cbcTextBox h2 {
+  color: var(--dark);
+}
+.empty.cbcTextBox:hover > h2 {
+  color: var(--lblue);
+}
+.cbcRight {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5rem 0 0;
+  position: relative;
+}
+.cbcRight img {
+  width: 100%;
+  height: 25rem;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.cbcRight img.none {
+  opacity: 0;
+}
+@media screen and (max-width: 1000px) {
+  .cbcRight img {
+    height: 20rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cbcRight img {
+    height: 20rem;
+    width: 75%;
+  }
+  .cbcRight {
+    width: 100%;
+    height: 25rem;
+  }
+  .cbcTextBox {
+    border-left: 0.5rem solid var(--lblue);
+    border-radius: 0.5rem;
+    padding: 0 1.5rem;
+    margin: 2.5rem 0 0 0;
+    cursor: pointer;
+}
+}

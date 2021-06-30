@@ -1,0 +1,200 @@
+.blog {
+  padding: 5rem 10%;
+}
+.blogBack {
+  font-size: 1.5rem;
+  color: var(--dblue);
+  font-weight: 500;
+}
+.blogHead {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--dblue);
+  margin: 5rem 0 1.5rem 0;
+}
+.blogIcons {
+  display: flex;
+  align-items: center;
+}
+.blogIcons svg {
+  font-size: 2.5rem;
+  color: var(--dblue);
+  margin: 0 1.5rem 0 0;
+  cursor: pointer;
+}
+.blogImg {
+  width: 80%;
+  height: 40rem;
+  object-fit: cover;
+  margin: 2.5rem 0 0 0;
+}
+.blogCategory {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--dblue);
+  margin: 1rem 0 2.5rem 0;
+}
+.blogText {
+  font-size: 1.5rem;
+  color: var(--dblue);
+  margin: 0 0 2.5rem 0;
+  width: 80%;
+}
+
+.researchAndInsights {
+  padding: 5rem 10%;
+}
+.researchAndInsights h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--dblue);
+  margin: 0 0 2.5rem 0;
+}
+.raiGrid {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5rem;
+}
+.raiCard {
+  border: 1px solid var(--light);
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.raiCard h3 
+{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-100%) ;
+  z-index: 0;
+  font-size: 1.35rem;
+  color: var(--lblue);
+  font-weight: 800;
+}
+.raiCard:hover >   h3 
+{
+  transform: translate(-50%,0.5rem) ;
+}
+.raiCard img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+.raiCard .imgBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 15rem;
+}
+.raiCard h6 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--lblue);
+  margin: 0rem 0 1rem 0;
+}
+.raiCard h5 {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--dblue);
+  overflow: hidden;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+
+}
+.raiCard div {
+  padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+}
+.raiCard:hover {
+  border: 1px solid var(--dblue);
+}
+.raiCard h4 {
+  font-size: 1.5rem;
+  color: lightgray;
+  font-weight: 600;
+  margin: 0 0 3.5rem 0;
+  transform: translate(0, -100%);
+  opacity: 0;
+}
+.raiCard h4 span {
+  color: var(--lblue);
+  font-weight: 800;
+}
+.raiCard a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--lblue);
+  display: flex;
+  align-items: flex-end;
+  transform: translate(-5rem, 0);
+  opacity: 0;
+}
+.raiCard a svg {
+  margin: 0 0 0 0.5rem;
+}
+.raiCard a:hover > svg {
+  transform: translate(50%, 0);
+}
+.raiCard:hover > div a,
+.raiCard:hover > div h4 {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.raiCard:hover > div h6 {
+  transform: translate(0, -100%);
+  opacity: 0;
+}
+.raiCard:hover > div h5 {
+  transform: translate(0, -100%);
+  opacity: 1;
+}
+.raiCard:hover > span img {
+  height: 10rem;
+  width: 80%;
+  border-radius: 0.75rem;
+}
+.raiCard:hover 
+{
+  border-radius: 0.75rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .blog {
+    padding: 2.5rem 5%;
+  }
+
+  .blogText {
+    width: 100%;
+  }
+  .blogImg {
+    width: 100%;
+  }
+  .raiGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+
+  .researchAndInsights {
+    padding: 5rem 5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .raiGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5rem;
+  }
+}
